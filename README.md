@@ -13,5 +13,8 @@ It also updates tsconfig.json paths to allow importing the created library in an
 ## NPM package
 https://www.npmjs.com/package/custom-schematics-library
 
+## Github repo
+https://github.com/angular/angular-cli/tree/main/packages/schematics/angular/library
+
 ## Notes
 This code is a modification of the angular schematics repository: https://github.com/angular/angular-cli/tree/main/packages/schematics/angular/library
