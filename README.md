@@ -1,28 +1,17 @@
-# Getting Started With Schematics
+# Description
+This schematics allow creating libraries with a name starting with @ and as much nested paths as we want (E.g. @libs/shared/project1/component1). 
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+It also updates tsconfig.json paths to allow importing the created library in any other library or application (The first / is conserved and others are converted into -):
 
-### Testing
-
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-
-Check the documentation with
-
-```bash
-schematics --help
 ```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
+"paths": {
+      "@libs/shared-project1-component1": [
+        "projects/libs/shared/project1/component1/src/public-api.ts",
+      ],
+    },
 ```
+## NPM package
+https://www.npmjs.com/package/custom-schematics-library
 
-That's it!
+## Notes
+This code is a modification of the angular schematics repository: https://github.com/angular/angular-cli/tree/main/packages/schematics/angular/library

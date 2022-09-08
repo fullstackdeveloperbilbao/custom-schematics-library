@@ -1,11 +1,29 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "custom-schematics": {
+    "library": {
       "aliases": ["lib"],
-      "factory": "./custom-schematics/index#customSchematics",
+      "factory": "./custom-schematics/index",
       "schema": "./custom-schematics/schema.json",
       "description": "Generate a library project for Angular."
+    },
+    "module": {
+      "aliases": ["m"],
+      "factory": "./module",
+      "description": "Create an Angular module.",
+      "schema": "./module/schema.json"
+    },
+    "component": {
+      "aliases": ["c"],
+      "factory": "./component",
+      "description": "Create an Angular component.",
+      "schema": "./component/schema.json"
+    },
+    "service": {
+      "aliases": ["s"],
+      "factory": "./service",
+      "description": "Create an Angular service.",
+      "schema": "./service/schema.json"
     }
   }
 }

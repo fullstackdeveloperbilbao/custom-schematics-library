@@ -1,5 +1,5 @@
 {
-  "name": "custom-schematics",
+  "name": "custom-schematics-library",
   "version": "0.0.0",
   "description": "A blank schematics",
   "scripts": {
@@ -18,8 +18,8 @@
     "typescript": "~4.5.2"
   },
   "devDependencies": {
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.10.0",
+    "@types/node": "^12.11.1",
     "jasmine": "^3.5.0"
   }
 }
