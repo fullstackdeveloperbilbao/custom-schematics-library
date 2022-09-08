@@ -4,7 +4,7 @@
     "custom-schematics": {
       "aliases": ["lib"],
       "factory": "./custom-schematics/index#customSchematics",
-      "schema": "./custom/schema.json",
+      "schema": "./custom-schematics/schema.json",
       "description": "Generate a library project for Angular."
     }
   }

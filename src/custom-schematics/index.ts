@@ -12,7 +12,7 @@ import { getWorkspace } from '../utility/workspace';
 
 // You don't have to export the function as default. You can also have more than one rule factory
 // per file.
-export function custom(_options: any): Rule {
+export function customSchematics(_options: any): Rule {
   function updateTsConfig(packageName: string, ...paths: string[]) {
     return (host: Tree) => {
       if (!host.exists('tsconfig.json')) {
