@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "custom-schematics": {
+      "aliases": ["lib"],
+      "factory": "./custom-schematics/index#customSchematics",
+      "schema": "./custom/schema.json",
+      "description": "Generate a library project for Angular."
+    }
+  }
+}
